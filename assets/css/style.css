@@ -154,6 +154,12 @@
     padding: 10px;
 }
 
+.column6{
+    flex: 1 0 14%;
+    max-width: 14%;
+    padding: 10px;
+}
+
 .footer {
     text-align: center;
     width: 100%;
