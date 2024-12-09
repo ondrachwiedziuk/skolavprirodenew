@@ -3,7 +3,7 @@
 
 [O akci](/#about)  
 
-[Registrace](/#registration)  
+[Registrace](/#register)  
 
 [Organizátoři](/#organizers)  
 
