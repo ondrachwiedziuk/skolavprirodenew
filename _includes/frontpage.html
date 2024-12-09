@@ -1,9 +1,9 @@
 <div class="frontpage">
-    <img src="/assets/images/banner-spring.jpg" alt="Banner", class="banner">
-    <div class="front-text">
-        {% capture about %}
-        {% include_relative {{ lang_path }}/frontpage.md %}
-        {% endcapture %}
-        {{ about | markdownify }}
-    </div>
+	<img src="{{ '/assets/images/banner-spring.jpg' | relative_url }}" alt="Banner", class="banner">
+	<div class="front-text">
+		{% capture about %}
+			{% include_relative {{ lang_path }}/frontpage.md %}
+		{% endcapture %}
+		{{ about | markdownify }}
+	</div>
 </div>
