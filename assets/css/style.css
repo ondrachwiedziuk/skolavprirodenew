@@ -125,20 +125,20 @@
 .front-text p {
     margin: 0;
     padding: 0;
-    font-size: calc((100vh - 70px) * (3/45));
+    font-size: calc((100vh - 100px) * (3/45));
 }
 
 .front-text h1 {
     margin: 0;
     padding: 0;
-    font-size: calc((100vh - 70px) * (5/45));
+    font-size: calc((100vh - 100px) * (5/45));
     font-weight: bold;
 }
 
 .front-text h2 {
     margin: 0;
     padding: 0;
-    font-size: calc((100vh - 70px) * (5/45));
+    font-size: calc((100vh - 100px) * (5/45));
     font-weight: normal;
 }
 
