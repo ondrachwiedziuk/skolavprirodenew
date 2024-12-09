@@ -180,20 +180,20 @@
 
 .body h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .body h2 {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .body p {
     display: block;
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .body a {
@@ -227,7 +227,7 @@
 
 .body li {
     padding: 2px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer {
@@ -251,13 +251,21 @@
 .footer p {
     margin: 0;
     padding: 5px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .footer h1 {
     margin: 0;
     padding: 5px;
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    padding: 0;
+    width: auto;
 }
 
 .profile {
@@ -276,13 +284,13 @@
 
 .profile h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .profile h2 {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
 }
 

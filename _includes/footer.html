@@ -1,23 +1,29 @@
 <div class="footer">
     <div class="grid3">
         <div class="cell">
-            <h1>Poděkování</h1>
+            {% capture about %}
+            {% include_relative {{ lang_path }}/thanks.md %}
+            {% endcapture %}
+            {{ about | markdownify }}
+        </div>
+
+        <div class="cell">
+            <h1>
+                {% if page.lang == "cs" %}
+                    Sponzor
+                {% else %}
+                    Sponsor
+                {% endif %}
+            </h1>
             <p>
-                Akce je pořádána pod záštitou <a href="https://www.mff.cuni.cz/cs/math/ka/katedra">Katedry algebry</a> <a href="https://www.mff.cuni.cz/">MFF UK</a> za finanční podpory projektu <a href="https://cuni.cz/UK-3362.html">SVV</a>.
+                <a href="https://www.rsj.com/"><img src="/assets/images/RSJ.png"></a>
             </p>
         </div>
 
         <div class="cell">
-            <h1>Sponzor</h1>
-            <p>
-                Děkujeme společnosti <a href="https://www.rsj.com/">RSJ</a> za finanční podporu.
-            </p>
-        </div>
-
-        <div class="cell">
-            <h1>Autor</h1>
-            <p>
-                Tento web byl vytvořen <a href="https://chwiedziuk.cz/">Ondřejem Chwiedziukem</a> roku 2025.
-            </p>
+            {% capture about %}
+            {% include_relative {{ lang_path }}/author.md %}
+            {% endcapture %}
+            {{ about | markdownify }}
         </div>
 </div>
