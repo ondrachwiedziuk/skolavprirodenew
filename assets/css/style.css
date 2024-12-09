@@ -1,5 +1,14 @@
+:root {
+    /* Fall */
+    /* --primary-color: crimson;
+    --secondary-color: salmon; */
+    /* Spring */
+    --primary-color: forestgreen;
+    --secondary-color: limegreen;
+}
+
 .navbar {
-    background-image: linear-gradient(#f8f9fa 48px, salmon 48px, salmon 50px);
+    background-image: linear-gradient(#f8f9fa 48px, var(--primary-color) 48px, var(--primary-color) 50px);
     height: 50px;
     position: fixed;
     top: 0;
@@ -55,7 +64,7 @@
 }
 
 .menu a:hover {
-    color: salmon;
+    color: var(--primary-color);
 }
 
 @media (max-width: 1000px) {
@@ -68,7 +77,7 @@
         top: 50px;
         left: 0;
         right: 0;
-        background-color: white;
+        background-color: #f8f9fa;
         flex-direction: column;
         display: none;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -174,18 +183,18 @@
 }
 
 .body a {
-    color: salmon;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .body a:hover {
-    color: crimson;
+    color: var(--secondary-color);
 }
 
 .body b {
     font-weight: bolder;
     color: #f8f9fa;
-    background: salmon;
+    background: var(--primary-color);
     border-radius: 30px;
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -193,7 +202,7 @@
 }
 
 .body b:hover {
-    background: crimson;
+    background: var(--secondary-color);
 }
 
 .body ul {
@@ -217,12 +226,12 @@
 }
 
 .footer a {
-    color: salmon;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: crimson;
+    color: var(--primary-color);
 }
 
 .footer p {
@@ -327,9 +336,6 @@
 
 .cell {
     padding: 10px;
-    /*
-    all cells in row has same height
-    */
     flex-direction: column;
     justify-content: space-between;
 }
