@@ -1,16 +1,16 @@
 
-[Home](/en/)  
+[Home]({{ '/en.html' | relative_url }})
 
-[About](/en/#about)  
+[About]({{ '/en.html#about' | relative_url }})
 
-[Register](/en/#register)  
+[Register]({{ '/en.html#register' | relative_url }})
 
-[Organizers](/en/#organizers)  
+[Organizers]({{ '/en.html#organizers' | relative_url }})
 
-[Participants](/en/#participants)  
+[Participants]({{ '/en.html#participants' | relative_url }})
 
-[Photos](/en/#photos)  
+[Photos]({{ '/en.html#photos' | relative_url }})
 
-[Archive](/en/#archiv)  
+[Archive]({{ '/en.html#archiv' | relative_url }})
 
-[Česky](/)
+[Česky]({{ '/' | relative_url }})

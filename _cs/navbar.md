@@ -1,16 +1,16 @@
 
-[Úvod](/)  
+[Úvod]({{ '/' | relative_url }})
 
-[O akci](/#about)  
+[O akci]({{ '/#about' | relative_url }})
 
-[Registrace](/#register)  
+[Registrace]({{ '/#register' | relative_url }})
 
-[Organizátoři](/#organizers)  
+[Organizátoři]({{ '/#organizers' | relative_url }})
 
-[Účastníci](/#participants)  
+[Účastníci]({{ '/#participants' | relative_url }})
 
-[Fotky](/#photos)  
+[Fotky]({{ '/#photos' | relative_url }})
 
-[Archiv](/#archiv)  
+[Archiv]({{ '/#archiv' | relative_url }})
 
-[English](/en/)
+[English]({{ '/en.html' | relative_url }})
