@@ -67,7 +67,7 @@
     color: var(--primary-color);
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .hamburger-icon {
         display: flex;
     }
@@ -140,6 +140,20 @@
     padding: 0;
     font-size: calc((100vh - 100px) * (5/45));
     font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    .front-text p {
+        font-size: 55px;
+    }
+
+    .front-text h1 {
+        font-size: 70px;
+    }
+
+    .front-text h2 {
+        font-size: 70px;
+    }
 }
 
 .clear {
@@ -340,7 +354,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .grid6 {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -358,7 +372,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 801px) {
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
     .grid6 {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -368,7 +382,7 @@
     }
 
     .grid3 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .grid2 {
