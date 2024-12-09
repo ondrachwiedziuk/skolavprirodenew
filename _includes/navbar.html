@@ -1,5 +1,11 @@
 <div class="navbar">
-    <h1>Škola v přírodě KA</h1>
+    <h1>
+        {% if page.lang == "cs" %}
+          Škola v přírodě KA
+        {% else %}
+          Spring school KA
+        {% endif %}
+      </h1>
 
     <!-- Hamburger Checkbox -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -7,13 +13,9 @@
 
     <!-- Navigation Menu -->
     <div class="menu">
-        <a href="/">Úvod</a>
-        <a href="/#about">O akci</a>
-        <a href="/#registration">Registrace</a>
-        <a href="/#organizers">Organizátoři</a>
-        <a href="/#participants">Účastníci</a>
-        <a href="/#photos">Fotky</a>
-        <a href="/#archiv">Archiv</a>
-        <a href="/en/">English</a>
+        {% capture about %}
+        {% include_relative {{ lang_path }}/navbar.md %}
+        {% endcapture %}
+        {{ about | markdownify }}
     </div>    
 </div>

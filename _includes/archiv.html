@@ -1,12 +1,26 @@
 <div class="darkwhite" id="archiv">
     <div class="body">
-        <h1>Archiv</h1>
+        <h1>
+            {% if page.lang == "cs" %}
+              Archiv
+            {% else %}
+              Archive
+            {% endif %}
+          </h1>
         <div class="grid4">
-        {% for file in site.archiv reversed %}
-            <div class="cell">
-                {{ file.content | markdownify }}
-            </div>
-        {% endfor %}
+            {% if page.lang == "cs" %}
+                {% for file in site.cs reversed %}
+                    <div class="cell">
+                        {{ file.content | markdownify }}
+                    </div>
+                {% endfor %}
+            {% else %}
+                {% for file in site.en reversed %}
+                    <div class="cell">
+                        {{ file.content | markdownify }}
+                    </div>
+                {% endfor %}
+            {% endif %}    
         </div>
     </div>
 </div>

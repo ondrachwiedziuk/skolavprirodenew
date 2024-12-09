@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
     </head>
     <body class="clear">
+        {% assign lang_path = "_" | append: page.lang %}
         <header>
             {% include navbar.html %}
         </header>
@@ -14,7 +15,7 @@
         <main>
             {% include frontpage.html %}
             {% include about.html %}
-            {% include registration.html %}
+            {% include register.html %}
             {% include organizers.html %}
             {% include participants.html %}
             {% include photos.html %}

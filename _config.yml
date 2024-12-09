@@ -26,9 +26,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
-  archiv:
+  cs:
     output: false
-
+    directory: "/_cs/archiv"
+  en:
+    output: false
+    directory: "/_en/archiv"
 
 # Build settings
 

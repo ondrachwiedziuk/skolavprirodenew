@@ -1,7 +1,12 @@
 <div class="white" id="photos">
     <div class="profile">
-        <h1>Legendární fotky z minulých ročníků</h1>
-        <div class="grid6">
+        <h1>
+            {% if page.lang == "cs" %}
+            Legendární fotky z minulých ročníků
+            {% else %}
+            Legendary photos from previous years
+            {% endif %}
+          </h1>        <div class="grid6">
         {% for file in site.static_files %}
             {% if file.path contains 'legendary/thumbs' %}
                 <div class="cell">

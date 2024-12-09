@@ -1,15 +1,39 @@
 <div class="darkwhite" id="participants">
     <div class="body">
-        <h1>Účastníci</h1>
+        <h1>
+            {% if page.lang == "cs" %}
+              Účastníci
+            {% else %}
+              Participants
+            {% endif %}
+          </h1>
         <div class="grid3">
             <div class="cell">
-                <h2>Zaměstnanci KA</h2>
+                <h2>
+                    {% if page.lang == "cs" %}
+                      Zaměstnanci KA
+                    {% else %}
+                      Employees of KA
+                    {% endif %}
+                  </h2>
             </div>
             <div class="cell">
-                <h2>Hosté a absolventi</h2>
+                <h2>
+                    {% if page.lang == "cs" %}
+                    Hosté a absolventi
+                    {% else %}
+                    Visitors and graduates
+                    {% endif %}
+                  </h2>
             </div>
             <div class="cell">
-                <h2>Studenti</h2>
+                <h2>
+                    {% if page.lang == "cs" %}
+                      Studenti
+                    {% else %}
+                      Students
+                    {% endif %}
+                  </h2>
             </div>
         </div>
     </div>
