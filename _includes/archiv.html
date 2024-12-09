@@ -1,17 +1,11 @@
 <div class="darkwhite" id="archiv">
     <div class="body">
         <h1>Archiv</h1>
-        {% assign counter = 0 %}
-        <div class="row">
+        <div class="grid4">
         {% for file in site.archiv reversed %}
-            <div class="column4">
+            <div class="cell">
                 {{ file.content | markdownify }}
             </div>
-            {% assign counter = counter | plus: 1 %}
-            {% if counter == 4 %}
-                </div><div class="row">
-                {% assign counter = 0 %}
-            {% endif %}
         {% endfor %}
         </div>
     </div>

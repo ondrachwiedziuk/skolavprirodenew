@@ -1,20 +1,14 @@
 <div class="white" id="photos">
     <div class="profile">
         <h1>Legendární fotky z minulých ročníků</h1>
-        {% assign counter = 0 %}
-        <div class="row">
+        <div class="grid6">
         {% for file in site.static_files %}
             {% if file.path contains 'legendary/thumbs' %}
-                <div class="column6">
+                <div class="cell">
                     <a href="{{ file.path | replace: 'thumbs', 'photos' }}">
                         <img src="{{ file.path }}" title="{{ file.name }}" alt="{{ file.name }}">
                     </a>
                 </div>
-                {% assign counter = counter | plus: 1 %}
-                {% if counter == 6 %}
-                    </div><div class="row">
-                    {% assign counter = 0 %}
-                {% endif %}
             {% endif %}
         {% endfor %}
         </div>
