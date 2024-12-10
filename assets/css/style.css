@@ -254,14 +254,14 @@
     font-weight: bold;
 }
 
-.galerry {
+.gallery {
     width: 70%;
     margin: 0 auto;
     padding-top: 50px;
     font-family: Helvetica;
 }
 
-.galerry img {
+.gallery img {
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -445,7 +445,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .galerry {
+    .gallery {
         padding-top: 100px;
     }
 
