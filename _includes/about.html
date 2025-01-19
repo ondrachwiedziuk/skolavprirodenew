@@ -1,57 +1,55 @@
 <div class="white" id="about">
-    <div class="body">
-        <h1>
-            {% if page.lang == "cs" %}
-              O akci
-            {% else %}
-              About the Event
-            {% endif %}
-          </h1>
-        <div class="grid3">
-            <div class="cell">
-							<img src="{{- 'assets/images/about_us.png' | rel_url -}}" alt="About us">
-                {% capture about %}                       
-                {% include_relative {{ lang_path }}/about.md %}
-                {% endcapture %}                          
-                {{ about | markdownify }}                 
-            </div>                                        
-            <div class="cell">                            
-							<img src="{{- 'assets/images/calendar.png' | rel_url -}}" al t="Calendar">
-                {% capture about %}                       
-                {% include_relative {{ lang_path }}/where.md %}
-                {% endcapture %}
-                {{ about | markdownify }}
-            </div>
-            <div class="cell">
-							<img src="{{- 'assets/images/team.png' | rel_url -}}" alt="Team">
-                {% capture about %}
-                {% include_relative {{ lang_path }}/who.md %}
-                {% endcapture %}
-                {{ about | markdownify }}
-            </div>
-            <div class="cell">
-							<img src="{{- 'assets/images/lecture.png' | rel_url -}}" alt="Lecture">
-                {% capture about %}
-                {% include_relative {{ lang_path }}/participants.md %}
-                {% endcapture %}
-                {{ about | markdownify }}
-            </div>
-
-            <div class="cell">
-							<img src="{{- 'assets/images/math.png' | rel_url -}}" alt="Topics">
-                {% capture about %}
-                {% include_relative {{ lang_path }}/topics.md %}
-                {% endcapture %}
-                {{ about | markdownify }}
-            </div>
-
-            <div class="cell">
-							<img src="{{- 'assets/images/presentation.png' | rel_url -}}" alt="Technics">
-                {% capture about %}
-                {% include_relative {{ lang_path }}/technics.md %}
-                {% endcapture %}
-                {{ about | markdownify }}
-            </div>
-        </div>
-    </div>
+	<div class="body">
+		<h1>
+			{%- if page.lang == "cs" -%}
+				O akci
+			{%- else -%}
+				About the Event
+			{%- endif -%}
+		</h1>
+		<div class="grid3">
+			<div class="cell">
+				<img src="{{- 'assets/images/about_us.png' | rel_url -}}" alt="About us">
+				{% capture about %}
+				{% include_relative {{ lang_path }}/about.md %}
+				{% endcapture %}
+				{{ about | markdownify }}
+			</div>
+			<div class="cell">
+				<img src="{{- 'assets/images/calendar.png' | rel_url -}}" alt="Calendar">
+				{% capture about %}
+				{% include_relative {{ lang_path }}/where.md %}
+				{% endcapture %}
+				{{ about | markdownify }}
+			</div>
+			<div class="cell">
+				<img src="{{- 'assets/images/team.png' | rel_url -}}" alt="Team">
+				{% capture about %}
+				{% include_relative {{ lang_path }}/who.md %}
+				{% endcapture %}
+				{{ about | markdownify }}
+			</div>
+			<div class="cell">
+				<img src="{{- 'assets/images/lecture.png' | rel_url -}}" alt="Lecture">
+				{% capture about %}
+				{% include_relative {{ lang_path }}/participants.md %}
+				{% endcapture %}
+				{{ about | markdownify }}
+			</div>
+			<div class="cell">
+				<img src="{{- 'assets/images/math.png' | rel_url -}}" alt="Topics">
+				{% capture about %}
+				{% include_relative {{ lang_path }}/topics.md %}
+				{% endcapture %}
+				{{ about | markdownify }}
+			</div>
+			<div class="cell">
+				<img src="{{- 'assets/images/presentation.png' | rel_url -}}" alt="Technics">
+				{% capture about %}
+				{% include_relative {{ lang_path }}/technics.md %}
+				{% endcapture %}
+				{{ about | markdownify }}
+			</div>
+		</div>
+	</div>
 </div>
