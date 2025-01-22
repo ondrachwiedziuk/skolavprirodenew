@@ -8,12 +8,9 @@ baseurl: "/~skolavprirode/" # the subpath of your site, e.g. /blog
 url: "https://www.karlin.mff.cuni.cz" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
-  cs:
+  archive:
     output: false
-    directory: "/_cs/archiv"
-  en:
-    output: false
-    directory: "/_en/archiv"
+    directory: "_archiv"
 
 
 jektex:
