@@ -1,29 +1,21 @@
 <div class="footer">
-    <div class="grid3">
-        <div class="cell">
-            {% capture about %}
-            {% include_relative {{ lang_path }}/thanks.md %}
-            {% endcapture %}
-            {{ about | markdownify }}
-        </div>
-
-        <div class="cell">
-            <h1>
-                {% if page.lang == "cs" %}
-                    Sponzor
-                {% else %}
-                    Sponsor
-                {% endif %}
-            </h1>
-            <p>
-                <a href="https://www.rsj.com/"><img src="{{- 'assets/images/RSJ.png' | rel_url -}}"></a>
-            </p>
-        </div>
-
-        <div class="cell">
-            {% capture about %}
-            {% include_relative {{ lang_path }}/author.md %}
-            {% endcapture %}
-            {{ about | markdownify }}
-        </div>
+	<div class="grid3">
+		<div class="cell">
+			{% capture about %}
+			{% include_relative {{ lang_path }}/thanks.md %}
+			{% endcapture %}
+			{{ about | markdownify }}
+		</div>
+		<div class="cell">
+			<h1>{% if page.lang == "cs" %}Sponzor{% else %}Sponsor{% endif %}</h1>
+			<p>
+				<a href="https://www.rsj.com/"><img src="{{- 'assets/images/RSJ.png' | rel_url -}}"></a>
+			</p>
+	</div>
+	<div class="cell">
+		{% capture about %}
+		{% include_relative {{ lang_path }}/author.md %}
+		{% endcapture %}
+		{{ about | markdownify }}
+	</div>
 </div>
