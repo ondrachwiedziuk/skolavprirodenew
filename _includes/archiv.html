@@ -1,31 +1,57 @@
 <div class="darkwhite" id="archiv">
-    <div class="body">
-        <h1>
-            {% if page.lang == "cs" %}
-              Archiv
-            {% else %}
-              Archive
-            {% endif %}
-          </h1>
-        <h1>
-            <div style="color:crimson">
-                WIP
-            </div>
-        </h1>
-        <div class="grid4">
-            {% if page.lang == "cs" %}
-                {% for file in site.cs reversed %}
-                    <div class="cell">
-                        {{ file.content | markdownify }}
-                    </div>
-                {% endfor %}
-            {% else %}
-                {% for file in site.en reversed %}
-                    <div class="cell">
-                        {{ file.content | markdownify }}
-                    </div>
-                {% endfor %}
-            {% endif %}    
-        </div>
-    </div>
+	<div class="body">
+		<h2>
+			{%- if page.lang == "cs" -%}
+				Archiv
+			{%- else -%}
+				Archive
+			{%- endif -%}
+		</h2>
+		<h2>
+			<div style="color:crimson">WIP</div>
+		</h2>
+		<div class="grid4">
+			{%for a in site.archive reversed %}
+				<div class="cell">
+					{%- if page.lang == "cs" %}
+						<h3>{{- a.title_cs -}}</h3>
+						<ul>
+							<li>{{- a.start_date | date: "%-d" }} - {{ a.end_date | date_to_long_string -}}</li>
+					{% else %}
+						<h3>{{- a.title_en -}}</h3>
+						<ul>
+							<li>{{- a.start_date }} - {{ a.end_date -}}</li>
+					{% endif %}
+							<li>{{- a.venue
+								| markdownify
+								| remove: "<p>",
+								| remove: "</p>"
+								| strip -}}, {{ a.place
+								| markdownify
+								| remove: "<p>",
+								| remove: "</p>"
+								| strip -}}
+							</li>
+					{%- if page.lang == "cs" %}
+							<li>{{- a.attendies | replace: "~", "asi " }} účastníků</li>
+						{% if a.abstracts_link -%}
+							<li><a href="{{- a.abstracts_link -}}">Abstrakty prezentací</a></li>
+						{% endif %}
+						{% if a.photo_link -%}
+							<li><a href="{{- a.photo_link -}}">Foto galerie</a></li>
+						{% endif %}
+					{% else %}
+							<li>{{- a.attendies | replace: "~", "about " }} participants</li>
+						{% if a.abstracts_link -%}
+							<li><a href="{{- a.abstracts_link -}}">Lecture abstracts</a></li>
+						{% endif %}
+						{% if a.photo_link -%}
+							<li><a href="{{- a.photo_link -}}">Photo gallery</a></li>
+						{% endif %}
+					{% endif %}
+						</ul>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </div>
