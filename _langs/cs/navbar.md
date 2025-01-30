@@ -13,4 +13,4 @@
 
 [Archiv]({{ '/#archiv' | relative_url }})
 
-[English]({{ '/en.html' | relative_url }})
+[English]({{ '/en/' | relative_url }})
