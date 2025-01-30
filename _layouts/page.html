@@ -1,28 +1,11 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<html lang="cs">
-    <head>
-        <title>{{ page.title }}</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
-    </head>
-    <body class="clear">
-        {% assign lang_path = "_" | append: page.lang %}
-        <header>
-            {% include navbar.html %}
-        </header>
-
-        <main>
-            {% include frontpage.html %}
-            {% include about.html %}
-            {% include register.html %}
-            {% include organizers.html %}
-            {% include participants.html %}
-            {% include photos.html %}
-            {% include archiv.html %}
-        </main>
-        <footer>
-            {% include footer.html %}
-        </footer>
-    </body>
-</html>
+{% include frontpage.html %}
+{% include about.html %}
+{% include register.html %}
+{% include organizers.html %}
+{% include participants.html %}
+{% include photos.html %}
+{% include archiv.html %}
