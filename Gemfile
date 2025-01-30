@@ -5,6 +5,7 @@ gem "jekyll", "~> 4.3.4"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jektex", "~> 0.1.1"
+  gem "jekyll-tidy"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

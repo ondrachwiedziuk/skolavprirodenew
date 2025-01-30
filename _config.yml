@@ -12,6 +12,9 @@ collections:
     output: false
     directory: "_archiv"
 
+plugins:
+  - jektex
+  - jekyll-tidy
 
 jektex:
   cache_dir: ".jektex-cache"

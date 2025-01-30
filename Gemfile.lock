@@ -44,6 +44,8 @@ GEM
     google-protobuf (4.29.3-x86_64-linux)
       bigdecimal
       rake (>= 13)
+    htmlbeautifier (1.4.3)
+    htmlcompressor (0.4.0)
     htmlentities (4.3.4)
     http_parser.rb (0.8.0)
     i18n (1.14.7)
@@ -72,6 +74,10 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-tidy (0.2.2)
+      htmlbeautifier
+      htmlcompressor
+      jekyll
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.5.1)
@@ -170,6 +176,7 @@ DEPENDENCIES
   jektex (~> 0.1.1)
   jekyll (~> 4.3.4)
   jekyll-feed (~> 0.12)
+  jekyll-tidy
   logger
   ostruct
   tzinfo (>= 1, < 3)
