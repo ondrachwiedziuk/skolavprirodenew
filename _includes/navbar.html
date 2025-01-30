@@ -1,21 +1,16 @@
 <div class="navbar">
-    <h1>
-        {% if page.lang == "cs" %}
-          Škola v přírodě KA
-        {% else %}
-          Spring school KA
-        {% endif %}
-      </h1>
-
-    <!-- Hamburger Checkbox -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger-icon">&#9776;</label>
-
-    <!-- Navigation Menu -->
-    <div class="menu">
-        {% capture about %}
-        {% include_relative {{ lang_path }}/navbar.md %}
-        {% endcapture %}
-        {{ about | markdownify }}
-    </div>    
+	<h1>
+		{%- if page.lang == "cs" -%}
+			Škola v přírodě KA
+		{%- else -%}
+			Spring school KA
+		{%- endif -%}
+	</h1>
+	<!-- Hamburger Checkbox -->
+	<input type="checkbox" id="menu-toggle" class="menu-toggle">
+	<label for="menu-toggle" class="hamburger-icon">&#9776;</label>
+	<!-- Navigation Menu -->
+	<div class="menu">
+		{%- lang_include navbar -%}
+	</div>
 </div>

@@ -1,10 +1,7 @@
 <div class="footer">
 	<div class="grid3">
 		<div class="cell">
-			{% capture about %}
-			{% include_relative {{ lang_path }}/thanks.md %}
-			{% endcapture %}
-			{{ about | markdownify }}
+			{% lang_include thanks %}
 		</div>
 		<div class="cell">
 			<h1>{% if page.lang == "cs" %}Sponzor{% else %}Sponsor{% endif %}</h1>
@@ -13,9 +10,6 @@
 			</p>
 	</div>
 	<div class="cell">
-		{% capture about %}
-		{% include_relative {{ lang_path }}/author.md %}
-		{% endcapture %}
-		{{ about | markdownify }}
+		{% lang_include author %}
 	</div>
 </div>

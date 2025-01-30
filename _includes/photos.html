@@ -1,23 +1,23 @@
 <div class="white" id="photos">
-    <div class="gallery">
-        <h1>
-            {% if page.lang == "cs" %}
-            Legendární fotky z minulých ročníků
-            {% else %}
-            Legendary photos from previous years
-            {% endif %}
-          </h1>
-        <div class="grid6">
-        {% for file in site.static_files %}
-            {% if file.path contains 'legendary/thumbs' %}
-                <div class="cell">
-                    <a href="{{ file.path | replace: 'thumbs', 'photos' | relative_url }}">
-                        <img src="{{ file.path | relative_url }}" title="{{ file.name }}" alt="{{ file.name }}">
-                    </a>
-                </div>
-            {% endif %}
-        {% endfor %}
-        </div>
-        <br>
-    </div>
+	<div class="gallery">
+		<h1>
+			{%- if page.lang == "cs" -%}
+			Legendární fotky z minulých ročníků
+			{%- else -%}
+			Legendary photos from previous years
+			{%- endif -%}
+		</h1>
+		<div class="grid6">
+			{% for file in site.static_files %}
+				{% if file.path contains 'legendary/thumbs' %}
+					<div class="cell">
+						<a href="{{ file.path | replace: 'thumbs', 'photos' | relative_url }}">
+							<img src="{{ file.path | relative_url }}" title="{{ file.name }}" alt="{{ file.name }}">
+						</a>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+		<br>
+	</div>
 </div>

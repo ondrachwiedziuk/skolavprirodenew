@@ -1,24 +1,21 @@
 <div class="darkwhite" id="register">
-    <div class="body">
-        <h1>
-            {% if page.lang == "cs" %}
-              Registrace
-            {% else %}
-              Register
-            {% endif %}
-          </h1>
-        <div class="grid2">
-            <div class="cell">
-                {% capture about %}
-                {% include_relative {{ lang_path }}/register.md %}
-                {% endcapture %}
-                {{ about | markdownify }}
-            </div>
-            <div class="cell">
-                <div class="gif">
-                    <img src="{{- 'assets/images/David-cut.webp' | rel_url -}}" alt="David na skluzavce" class="gif">
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="body">
+		<h1>
+			{%- if page.lang == "cs" -%}
+				Registrace
+			{%- else -%}
+				Register
+			{%- endif -%}
+		</h1>
+		<div class="grid2">
+			<div class="cell">
+				{% lang_include register %}
+			</div>
+			<div class="cell">
+				<div class="gif">
+					<img src="{{- 'assets/images/David-cut.webp' | rel_url -}}" alt="David na skluzavce" class="gif">
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
