@@ -24,7 +24,7 @@
 
 .navbar h1 {
     color: #333;
-    font-size: 25px;
+    font-size: 24px;
     margin: 0;
     flex-grow: 1;
 }
@@ -54,14 +54,14 @@
 .menu {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .menu a {
     color: #333;
     text-decoration: none;
     font-size: 18px;
-    padding: 15px;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -392,15 +392,6 @@
 }
 
 @media (pointer: coarse) {
-    .navbar {
-        height: 60px;
-        background-image: linear-gradient(#f8f9fa 58px, var(--primary-color) 58px, var(--primary-color) 60px);
-    }
-
-    .menu {
-        top: 60px;
-    }
-
     .menu a {
         font-size: 25px;
     }
@@ -412,17 +403,8 @@
     .hamburger-icon {
         height: 30px;
         font-size: 30px;
-        padding-right: 40px;
+        padding-right: 25px;
         margin-top: -10px;
-    }
-
-    .frontpage {
-        height: calc(100vh - 60px);
-        margin-top: 60px;
-    }
-
-    .body {
-        padding-top: 60px;
     }
 
     .body h1 {
@@ -453,10 +435,6 @@
         font-size: 28px;
     }
 
-    .profile {
-        padding-top: 60px;
-    }
-
     .grid6 {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -471,10 +449,6 @@
 
     .grid2 {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .gallery {
-        padding-top: 60px;
     }
 
     .footer img {
