@@ -22,5 +22,5 @@ photo_link: "/fotky/"
 
 
 ## License
-Source code is published under [GPLv3 license](https://github.com/ondrachwiedziuk/skolavprirodenew/blob/main/LICENSE).
+Source code is published under [AGPLv3 license](https://github.com/ondrachwiedziuk/skolavprirodenew/blob/main/LICENSE).
 
