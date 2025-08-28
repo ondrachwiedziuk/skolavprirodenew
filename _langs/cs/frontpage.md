@@ -7,12 +7,12 @@
 
 ## ALGEBRY
 
-27 - 30.  
+13. - 17.  
 
-BŘEZNA
+LISTOPADU
 
 2025
 
-STRÁŽNÉ
+KOŘENOV
 
-KRKONOŠE
+JIZERSKÉ HORY
