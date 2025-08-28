@@ -15,6 +15,6 @@ Registration is done via email. Send the following information to [skolavprirode
 
 The registration fee is <b>800 CZK</b>, which covers accommodation and meals (starting with Thursday lunch and ending with Monday breakfast). Payment details will be provided in the confirmation email.
 
-The application must be submitted by Friday, <b>October&nbsp;17th</b>. When the accommodation capacity (57) is filled, registration may be closed earlier. (The list of registered participants on the website may not be up to date.)
+The application must be submitted by Friday, <b>October&nbsp;17th</b>. When the accommodation capacity (60) is filled, registration may be closed earlier. (The list of registered participants on the website may not be up to date.)
 
 The School in Nature is financially supported by the SVV project and contributions from the RSJ Foundation.
