@@ -7,12 +7,12 @@
 
 ## OF ALGEBRA
 
-27th to 30th
+13th to 17th
 
-March
+November
 
 2025
 
-STRÁŽNÉ
+KOŘENOV
 
-KRKONOŠE
+JIZERSKÉ HORY
