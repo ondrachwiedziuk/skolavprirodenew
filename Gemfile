@@ -26,3 +26,5 @@ gem "csv"
 gem "logger"
 gem "ostruct"
 gem "base64"
+gem "erb"
+

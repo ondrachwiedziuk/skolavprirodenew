@@ -12,6 +12,7 @@ GEM
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
+    erb (5.0.2)
     eventmachine (1.2.7)
     execjs (2.10.0)
     ffi (1.17.2)
@@ -172,7 +173,6 @@ PLATFORMS
   riscv64-linux-android
   riscv64-linux-gnu
   riscv64-linux-musl
-  ruby
   x86-cygwin
   x86-linux
   x86-linux-android
@@ -188,6 +188,7 @@ PLATFORMS
 DEPENDENCIES
   base64
   csv
+  erb
   http_parser.rb (~> 0.6.0)
   jektex (~> 0.1.1)
   jekyll (~> 4.4.1)
