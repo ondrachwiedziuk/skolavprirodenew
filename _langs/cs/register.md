@@ -13,7 +13,7 @@ Registrace probíhá formou mailu. Na [skolavprirode@karlin.mff.cuni.cz](mailto:
 - Chci 25/40 min na přednášku (+5 min diskuse)? (Preferujeme a doporučujeme 25 min.)
 - Očekávaný příjezd a odjezd.
 
-Registrační poplatek činí <b>800 Kč</b>, v ceně je nocleh i strava (počínaje čtvrtečním obědem a pondělní snídaní konče). Podrobnosti o platbě přijdou v potvrzovacím mailu.
+Registrační poplatek činí <b>800 Kč</b>, v ceně je nocleh i strava (počínaje čtvrteční večeří a pondělní snídaní konče). Podrobnosti o platbě přijdou v potvrzovacím mailu.
 
 Přihlášku je třeba odeslat nejpozději v pátek <b>17.&nbsp;řijna</b>. Při naplnění kapacity objektu (60) může být přihlašování ukončeno dříve. (Seznam přihlášených na webu nemusí být aktuální.)
 
