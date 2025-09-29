@@ -1,4 +1,4 @@
 
 ## Přednášky účastníků
 
-Odborný program tvoří přednášky o délce 25 - 40 minut účastníků na vybraná témata. Přednáška a následná diskuze probíhají obvykle v angličtině (pokud trváte na češtině, napište mail na [skolavprirode@karlin.mff.cuni.cz](mailto:skolavprirode@karlin.mff.cuni.cz)). Mít přednášku je povinné pro studenty bakalářského a magisterského studia. Je třeba, aby si každý přednášející s předstihem připravil krátký abstrakt o rozsahu 5-10 řádků (prostý text, lze použít základní LaTeXové příkazy) a zaslal nám ho do **pátku 24.&nbsp;října**.
+Odborný program tvoří přednášky o délce 25 - 40 minut účastníků na vybraná témata. Přednáška a následná diskuze probíhají obvykle v angličtině (pokud trváte na češtině, napište mail na [skolavprirode@karlin.mff.cuni.cz](mailto:skolavprirode@karlin.mff.cuni.cz)). Mít přednášku je povinné pro studenty bakalářského a magisterského studia. Je třeba, aby si každý přednášející s předstihem připravil krátký abstrakt o rozsahu 5-10 řádků (prostý text, lze použít základní LaTeXové příkazy) a zaslal ho Subhamu Royovi nebo Robinu Visserovi do **pátku 24.&nbsp;října**.
