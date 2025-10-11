@@ -5,11 +5,13 @@
     /* Spring */
     --primary-color: forestgreen;
     --secondary-color: limegreen;
+    /* Navbar sizing */
+    --navbar-height: 50px;
 }
 
 .navbar {
-    background-image: linear-gradient(#f8f9fa 48px, var(--primary-color) 48px, var(--primary-color) 50px);
-    height: 50px;
+    background-image: linear-gradient(#f8f9fa calc(var(--navbar-height) - 2px), var(--primary-color) calc(var(--navbar-height) - 2px), var(--primary-color) var(--navbar-height));
+    height: var(--navbar-height);
     position: fixed;
     top: 0;
     margin-top: 0;
@@ -71,8 +73,8 @@
 
 .frontpage {
     position: relative;
-    height: calc(100vh - 50px);
-    margin-top: 50px;
+    height: calc(100vh - var(--navbar-height));
+    margin-top: var(--navbar-height);
     width: 100%;
     overflow: hidden;
 }
@@ -125,7 +127,7 @@
 .body {
     width: 70%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: var(--navbar-height);
     font-family: Helvetica;
     padding-bottom: 10px;
 }
@@ -231,7 +233,7 @@
 .profile {
     width: 70%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: var(--navbar-height);
     font-family: Helvetica;
 }
 
@@ -257,7 +259,7 @@
 .gallery {
     width: 70%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: var(--navbar-height);
     font-family: Helvetica;
 }
 
@@ -368,7 +370,7 @@
 
     .menu {
         position: absolute;
-        top: 50px;
+        top: var(--navbar-height);
         left: 0;
         right: 0;
         background-color: #f8f9fa;
@@ -389,6 +391,26 @@
         display: flex;
     }
 
+}
+
+/* Small devices (template-like device query: on-palm ~600px) */
+@media only screen and (max-width: 600px) {
+    :root { --navbar-height: 64px; }
+
+    .navbar h1 {
+        font-size: 26px;
+    }
+
+    .hamburger-icon {
+        height: 30px;
+        font-size: 28px;
+        padding-right: 12px;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 14px 20px;
+    }
 }
 
 @media (pointer: coarse) {
