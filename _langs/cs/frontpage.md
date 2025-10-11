@@ -7,7 +7,7 @@
 
 ## ALGEBRY
 
-13\. – 17.
+13\. – 17\.
 
 LISTOPADU
 
