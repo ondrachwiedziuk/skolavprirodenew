@@ -34,23 +34,27 @@
 							</li>
 					{%- if page.lang == "cs" %}
 							<li>
-								{%- if a.guest_list -%}<a href="{{- a.guest_list -}}">{%- endif -%}
+								{%- if a.guest_list -%}<a href="{{- a.guest_list | relative_url -}}">{%- endif -%}
 								{{- a.attendies | replace: "~", "asi " }} účastníků
 								{%- if a.guest_list -%}</a>{%- endif -%}
 							</li>
 						{% if a.abstracts_link -%}
-							<li><a href="{{- a.abstracts_link -}}">Abstrakty prezentací</a></li>
+							<li><a href="{{- a.abstracts_link | relative_url -}}">Abstrakty prezentací</a></li>
 						{% endif %}
 						{% if a.photo_link -%}
-							<li><a href="{{- a.photo_link -}}">Foto galerie</a></li>
+							<li><a href="{{- a.photo_link | relative_url -}}">Foto galerie</a></li>
 						{% endif %}
 					{% else %}
-							<li>{{- a.attendies | replace: "~", "about " }} participants</li>
+							<li>
+								{%- if a.guest_list -%}<a href="{{- a.guest_list | relative_url -}}">{%- endif -%}
+								{{- a.attendies | replace: "~", "about " }} participants
+								{%- if a.guest_list -%}</a>{%- endif -%}
+							</li>
 						{% if a.abstracts_link -%}
-							<li><a href="{{- a.abstracts_link -}}">Lecture abstracts</a></li>
+							<li><a href="{{- a.abstracts_link | relative_url -}}">Lecture abstracts</a></li>
 						{% endif %}
 						{% if a.photo_link -%}
-							<li><a href="{{- a.photo_link -}}">Photo gallery</a></li>
+							<li><a href="{{- a.photo_link | relative_url -}}">Photo gallery</a></li>
 						{% endif %}
 					{% endif %}
 						</ul>
