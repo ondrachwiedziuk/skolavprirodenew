@@ -33,7 +33,11 @@
 								| strip -}}
 							</li>
 					{%- if page.lang == "cs" %}
-							<li>{{- a.attendies | replace: "~", "asi " }} účastníků</li>
+							<li>
+								{%- if a.guest_list -%}<a href="{{- a.guest_list -}}">{%- endif -%}
+								{{- a.attendies | replace: "~", "asi " }} účastníků
+								{%- if a.guest_list -%}</a>{%- endif -%}
+							</li>
 						{% if a.abstracts_link -%}
 							<li><a href="{{- a.abstracts_link -}}">Abstrakty prezentací</a></li>
 						{% endif %}
