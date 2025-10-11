@@ -14,6 +14,7 @@ place: "Telecí"
 attendies: "~41"
 abstracts_link: "/abstrakty.pdf"
 photo_link: "/fotky/"
+guest_list: "/gl.pdf"
 ```
 
 - You can use markdown in `title_cs`, `title_en`, `venue` and `place` attributes.
