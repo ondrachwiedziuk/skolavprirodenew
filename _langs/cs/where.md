@@ -1,4 +1,4 @@
 
 ## Kde a kdy?
 
-Letos se akce koná od čtvrtka 13. do svátečního pondělí 17. listopadu 2025. Sejdeme se v [Chatě Sport Ski](https://www.chata-sport-ski.cz/) v Kořenově, v Jizerských horách.
+Letos se akce koná od středy 6. do neděle 10. května 2026. Sejdeme se na [Zámku Ratibořky](https://www.ratiborky.cz/) v Ratibořských horách.

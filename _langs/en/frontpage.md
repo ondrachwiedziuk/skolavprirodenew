@@ -7,12 +7,10 @@
 
 ## OF ALGEBRA
 
-13th to 17th
+6th to 10th
 
-November
+May
 
-2025
+2026
 
-KOŘENOV
-
-JIZERSKÉ HORY
+RATIBOŘSKÉ HORY
