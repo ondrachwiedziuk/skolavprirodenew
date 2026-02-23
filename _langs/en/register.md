@@ -7,7 +7,7 @@ Registration is done via email. Send the following information to [skolavprirode
 - Year and field of study
 - Email address
 - Special dietary requirements
-- If I am a PhD student, do I want to give a lecture? (Undergraduate and master's students are required to give a lecture.)
+- If I am a PhD student, do I want to give a lecture? (Undergraduate, graduate and new PhD students are required to give a lecture.)
 - Do I want to lecture on my own topic?
 - Do I want 25/40 minutes for the lecture (+5 min discussion)? (We prefer and recommend 25 minutes.)
 - Expected arrival and departure times.

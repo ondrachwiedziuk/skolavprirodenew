@@ -7,7 +7,7 @@ Registrace probíhá formou mailu. Na [skolavprirode@karlin.mff.cuni.cz](mailto:
 - Ročník, obor
 - Email
 - Speciální stravovací požadavky
-- Pokud jsem doktorand, chci přednášet? (Studenti bakalářského a magisterského studia přednáší povinně.)
+- Pokud jsem doktorand, chci přednášet? (Studenti bakalářského, magisterského studia a noví doktorandi přednáší povinně.)
 - Chci přednášet na vlastní téma?
 - Chci 25/40 min na přednášku (+5 min diskuse)? (Preferujeme a doporučujeme 25 min.)
 - Očekávaný příjezd a odjezd.
